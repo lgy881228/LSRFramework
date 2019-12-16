@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   
     s.name         = "LSRFramework"
-    s.version      = "3.0"
+    s.version      = "1.0"
     s.summary      = "UI Framework for LSRTeam."
 
 	s.description  = <<-DESC
@@ -24,13 +24,13 @@ Pod::Spec.new do |s|
     
     s.xcconfig     = { "GCC_PREPROCESSOR_DEFINITIONS" => 'TTTFRAMEWORK=1' }
 
-    s.preserve_paths = "LSRFramework/Classes/**/*", "LSRFramework/Assets/**/*", LSRFramework/Framework/**/*", "LSRFramework/Archive/**/*"
+    s.preserve_paths = "LSRFramework/Classes/**/*", "LSRFramework/Assets/**/*", #{s.name}/Framework/**/*", "#{s.name}/Archive/**/*"
 
     s.source_files        = "LSRFramework/Classes/**/*.{h,m,mm,c,cpp,cc}"
     s.public_header_files = "LSRFramework/Classes/**/*.h"
     # s.vendored_frameworks = "LSRFramework/Assets/**/*.framework"
 
-    s.resources    = "#{s.name}/Assets/#{s.name}.bundle"
+    s.resources    = "LSRFramework/Assets/TTTFramework.bundle"
 
     s.frameworks   =  'SystemConfiguration', 'MobileCoreServices', 'WebKit', 'AVFoundation', 'Photos'
 
