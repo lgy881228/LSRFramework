@@ -6,7 +6,7 @@
 //  Copyright © 2016年 OrangeTeam. All rights reserved.
 //
 
-#import <TTTFramework/TabBarController.h>
+#import <LSRFramework/TabBarController.h>
 
 @interface TabBarController (Theme)
 

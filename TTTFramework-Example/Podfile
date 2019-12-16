@@ -7,8 +7,6 @@ use_frameworks!
 
 target 'TTTFramework-Example' do
   platform :ios, '8.0'
-  
-  pod 'TTTFramework', :path => '../', :isSource => true
-  # pod 'TTTFramework'
+  pod 'LSRFramework'
 
 end

@@ -7,7 +7,7 @@
 //
 
 #import "UIView+Debug.h"
-#import <TTTFramework/NSObject+Swizzle.h>
+#import <LSRFramework/NSObject+Swizzle.h>
 
 @implementation UIView (Debug)
 

@@ -1,0 +1,5 @@
+${PODS_ROOT}/Target Support Files/Pods-TTTFramework-Example/Pods-TTTFramework-Example-frameworks.sh
+${BUILT_PRODUCTS_DIR}/LSRFramework/LSRFramework.framework
+${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework
+${BUILT_PRODUCTS_DIR}/uchardet/uchardet.framework

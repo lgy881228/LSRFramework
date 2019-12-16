@@ -1,0 +1,6 @@
+framework module LSRFramework {
+  umbrella header "LSRFramework-umbrella.h"
+
+  export *
+  module * { export * }
+}

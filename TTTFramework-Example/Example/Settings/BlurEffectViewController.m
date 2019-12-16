@@ -7,7 +7,7 @@
 //
 
 #import "BlurEffectViewController.h"
-#import <TTTFramework/TTTFramework.h>
+#import <LSRFramework/LSRFramework.h>
 #import <Masonry/Masonry.h>
 
 @interface BlurEffectViewController ()

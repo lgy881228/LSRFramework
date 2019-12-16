@@ -1,0 +1,6 @@
+framework module Pods_TTTFramework_Example {
+  umbrella header "Pods-TTTFramework-Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

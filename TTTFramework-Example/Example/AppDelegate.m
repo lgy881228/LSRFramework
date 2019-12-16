@@ -11,7 +11,7 @@
 #import "SettingsViewController.h"
 #import "BlurEffectViewController.h"
 #import "TabBarController+Theme.h"
-#import <TTTFramework/TTTFramework.h>
+#import <LSRFramework/LSRFramework.h>
 
 @interface AppDelegate () <UINavigationControllerDelegate>
 

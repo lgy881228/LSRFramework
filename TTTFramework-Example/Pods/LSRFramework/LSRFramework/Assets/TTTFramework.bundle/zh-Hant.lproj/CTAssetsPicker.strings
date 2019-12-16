@@ -1,0 +1,47 @@
+/* Navigation bar buttons */
+"Cancel" = "取消";
+"Done" = "完成";
+
+/* Default title */
+"Photos" = "照片";
+
+/* No. of selected */
+"%@ Photo Selected" = "已選擇 %@ 張照片";
+"%@ Photos Selected" = "已選擇 %@ 張照片";
+"%@ Video Selected" = "已選擇 %@ 個視頻";
+"%@ Videos Selected" = "已選擇 %@ 個視頻";
+"%@ Items Selected" = "已選擇 %@ 項";
+
+/* Grid view footer */
+"%@ Photos" = "%@ 張照片";
+"%@ Videos" = "%@ 個視頻";
+"%@ Photos, %@ Videos" = "%1$@ 張照片、%2$@ 個視頻";
+
+/* Assets index */
+"%@ of %@" = "%1$@ / %2$@";
+
+/* Messages if privacy is not granted */
+"This app does not have access to your photos or videos." = "此應用程序對您的照片或視頻沒有訪問權。";
+"You can enable access in Privacy Settings." = "您可以在隱私設置中啟用訪問權。";
+
+/* Messages if no assets */
+"No Photos or Videos" = "無照片或視頻";
+
+/* The parameter will be replaced by the device model name */
+"You can take photos and videos using the camera, or sync photos and videos onto your %@\nusing iTunes." = "您可以使用攝像頭拍攝照片和視頻，或使用iTunes將照片和視頻同步到您的%@上。 \n";
+"You can sync photos and videos onto your %@ using iTunes." = "您可以使用iTunes將照片和視頻同步到您的%@上。";
+
+/* Accessibility labels */
+"Play" = "播放";
+
+/* Video duration spell out */
+"hours" = "小時";
+"hour" = "小時";
+"minutes" = "分鐘";
+"minute" = "分鐘";
+"seconds" = "秒";
+"second" = "秒";
+
+/* Error message of playing stream video */
+"Cannot Play Stream Video" = "無法播放影片";
+"OK" = "好的";

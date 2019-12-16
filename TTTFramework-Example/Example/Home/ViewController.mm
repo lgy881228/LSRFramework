@@ -10,7 +10,7 @@
 #import "UIButton+ContentView.h"
 #import "UIImage+Color.h"
 #import "PushedViewController.h"
-#import <TTTFramework/TTTFramework.h>
+#import <LSRFramework/LSRFramework.h>
 #import <Masonry/Masonry.h>
 
 @interface ViewController ()
