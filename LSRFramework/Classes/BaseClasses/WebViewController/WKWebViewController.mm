@@ -8,7 +8,7 @@
 
 #import "WKWebViewController.h"
 #import "UIViewController+.h"
-#import "NSString+Encoding.h"
+//#import "NSString+Encoding.h"
 #import "TTTFrameworkCommonDefines.h"
 #import <MobileCoreServices/UTType.h>
 #import <Masonry/Masonry.h>
@@ -192,7 +192,7 @@
                 }
 #else
                 NSData *txtData = [NSData dataWithContentsOfFile:self.fileURL];
-                NSString *encoding = self.fileURL.contentTextCharSet;
+                NSString *encoding = [self.fileURL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
                 
                 [self.webView loadData:txtData MIMEType:mimeType characterEncodingName:encoding baseURL:[NSURL fileURLWithPath:NSBundle.mainBundle.bundlePath]];
 #endif
