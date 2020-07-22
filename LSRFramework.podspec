@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   
     s.name         = "LSRFramework"
-    s.version      = "1.0"
+    s.version      = "1.1"
     s.summary      = "UI Framework for LSRTeam."
 
 	s.description  = <<-DESC
@@ -17,8 +17,8 @@ Pod::Spec.new do |s|
     s.source       = { :git => "https://github.com/lgy881228/LSRFramework.git", :tag => s.version }
 
     s.platform     = :ios
-    s.platform     = :ios, "8.0"
-    s.ios.deployment_target = "8.0"
+    s.platform     = :ios, "11.0"
+    s.ios.deployment_target = "11.0"
 	
     s.requires_arc = true
     
@@ -32,11 +32,11 @@ Pod::Spec.new do |s|
 
     s.resources    = "LSRFramework/Assets/TTTFramework.bundle"
 
-    s.frameworks   =  'SystemConfiguration', 'MobileCoreServices', 'WebKit', 'AVFoundation', 'Photos'
+    s.frameworks   =  'SystemConfiguration', 'WebKit', 'AVFoundation', 'Photos'
 
     s.dependency 'MBProgressHUD'
     s.dependency 'Masonry'
-    s.dependency 'uchardet'
+   
 
 
 end
