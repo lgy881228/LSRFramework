@@ -6,7 +6,7 @@
 
 @interface AppNetworkMonitoring : NSObject
 
-@property (nonatomic, readonly) NetworkStatus networkStatus;
+@property (nonatomic, readonly) LSRNetworkStatus networkStatus;
 @property (nonatomic, readonly) NSString     *curIPAddress;
 
 + (AppNetworkMonitoring *)sharedInstance;

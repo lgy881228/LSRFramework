@@ -30,7 +30,7 @@ static AppNetworkMonitoring* s_instance = nil;
 
 #pragma mark - networkStatusChanged
 
-- (void)inMainThreadWithPreNStatus:(NetworkStatus)nstatus
+- (void)inMainThreadWithPreNStatus:(LSRNetworkStatus)nstatus
 {
     if([NSThread isMainThread])
     {
@@ -83,14 +83,14 @@ static AppNetworkMonitoring* s_instance = nil;
     
     if (_curReachability)
     {
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:_curReachability];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kLSRReachabilityChangedNotification object:_curReachability];
         [_curReachability startNotifier];
     }
     else
     {
         if (_networkStatus != NotReachable)
         {
-            NetworkStatus preStatus = _networkStatus;
+            LSRNetworkStatus preStatus = _networkStatus;
             _networkStatus = NotReachable;
             self.curReachability = nil;
             [self inMainThreadWithPreNStatus:preStatus];
@@ -106,7 +106,7 @@ static AppNetworkMonitoring* s_instance = nil;
     static BOOL isFirstChanged = YES;
     
     LSRReachability *reachab = (LSRReachability*)[notify object];
-    NetworkStatus netStatus = [reachab currentReachabilityStatus];
+    LSRNetworkStatus netStatus = [reachab currentReachabilityStatus];
     
     if (isFirstChanged)
     {
@@ -116,7 +116,7 @@ static AppNetworkMonitoring* s_instance = nil;
     }
     else if (_networkStatus != netStatus)
     {
-        NetworkStatus preStatus = _networkStatus;
+        LSRNetworkStatus preStatus = _networkStatus;
         _networkStatus = netStatus;
         [self inMainThreadWithPreNStatus:preStatus];
     }
@@ -185,7 +185,7 @@ static AppNetworkMonitoring* s_instance = nil;
     if (_curReachability)
     {
         [_curReachability stopNotifier];
-        [[NSNotificationCenter defaultCenter] removeObserver:self name:kReachabilityChangedNotification object:_curReachability];
+        [[NSNotificationCenter defaultCenter] removeObserver:self name:kLSRReachabilityChangedNotification object:_curReachability];
         self.curReachability = nil;
     }
 }

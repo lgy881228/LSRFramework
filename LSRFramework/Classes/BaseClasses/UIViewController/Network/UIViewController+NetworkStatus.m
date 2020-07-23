@@ -14,7 +14,7 @@
 #define kThereIsNoNetwork   @"网络不可用"
 // #define kNetworkIsAvailable @"正在使用WIFI"
 
-static NetworkStatus initNetworkStatus;
+static LSRNetworkStatus initNetworkStatus;
 
 @implementation UIViewController (NetworkStatus)
 
@@ -38,7 +38,7 @@ static NetworkStatus initNetworkStatus;
     return (NotReachable == [AppNetworkMonitoring sharedInstance].networkStatus);
 }
 
-- (NetworkStatus)currentNetworkStatus
+- (LSRNetworkStatus)currentNetworkStatus
 {
     return [AppNetworkMonitoring sharedInstance].networkStatus;
 }
@@ -58,7 +58,7 @@ static NetworkStatus initNetworkStatus;
             return;
         }
         
-        NetworkStatus status = monitor.networkStatus;
+        LSRNetworkStatus status = monitor.networkStatus;
         
         if (NotReachable == status)
         {

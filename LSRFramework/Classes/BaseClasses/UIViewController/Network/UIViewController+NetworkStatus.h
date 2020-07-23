@@ -32,6 +32,6 @@
 
 - (BOOL)isNoNetwork;
 
-- (NetworkStatus)currentNetworkStatus;
+- (LSRNetworkStatus)currentNetworkStatus;
 
 @end
