@@ -1,5 +1,5 @@
 #import <Foundation/Foundation.h>
-#import "Reachability.h"
+#import "LSRReachability.h"
 
 #define kNotifyNetworkStatusChanged  @"_notifyNetworkStatusChanged_"
 #define kNotifyNetworkIPAddrChanged  @"_notifyNetworkIPAddrChanged_"

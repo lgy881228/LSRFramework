@@ -79,7 +79,6 @@
 #import "NSObject+Swizzle.h"
 #import "NSString+Directories.h"
 #import "NSString+Emoji.h"
-#import "NSString+Encoding.h"
 #import "NSString+Extension.h"
 #import "UIBarButtonItem+Extension.h"
 #import "UIButton+ImageWithColor.h"

@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   
     s.name         = "LSRFramework"
-    s.version      = "1.1"
+    s.version      = "1.1.2"
     s.summary      = "UI Framework for LSRTeam."
 
 	s.description  = <<-DESC

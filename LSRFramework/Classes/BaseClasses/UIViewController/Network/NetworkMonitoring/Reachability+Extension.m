@@ -8,15 +8,15 @@
 
 #import "Reachability+Extension.h"
 
-@implementation Reachability (Extension)
+@implementation LSRReachability (Extension)
 
 + (NSString *)currentNetType
 {
-    if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == ReachableViaWWAN)
+    if ([[LSRReachability reachabilityForInternetConnection] currentReachabilityStatus] == ReachableViaWWAN)
     {
         return @"3g";
     }
-    else if ([[Reachability reachabilityForInternetConnection] currentReachabilityStatus] == ReachableViaWiFi)
+    else if ([[LSRReachability reachabilityForInternetConnection] currentReachabilityStatus] == ReachableViaWiFi)
     {
         return @"wifi";
     }

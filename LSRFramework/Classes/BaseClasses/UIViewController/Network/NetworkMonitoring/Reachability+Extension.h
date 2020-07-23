@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 Leso. All rights reserved.
 //
 
-#import "Reachability.h"
+#import "LSRReachability.h"
 
-@interface Reachability (Extension)
+@interface LSRReachability (Extension)
 + (NSString *)currentNetType;
 @end

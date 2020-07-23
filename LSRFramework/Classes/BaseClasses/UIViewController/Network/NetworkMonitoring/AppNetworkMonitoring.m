@@ -6,7 +6,7 @@ static AppNetworkMonitoring* s_instance = nil;
 
 @interface AppNetworkMonitoring()
 
-@property (nonatomic, strong) Reachability *curReachability;
+@property (nonatomic, strong) LSRReachability *curReachability;
 
 @property (nonatomic, strong) NSString *curIPAddress;
 
@@ -76,10 +76,10 @@ static AppNetworkMonitoring* s_instance = nil;
 {
     [self releaseCurReachability];
     
-    self.curReachability = [Reachability reachabilityWithHostname:@"www.baidu.com"];
+    self.curReachability = [LSRReachability reachabilityWithHostname:@"www.baidu.com"];
         
     if (!_curReachability || NotReachable == [_curReachability currentReachabilityStatus])
-        self.curReachability = [Reachability reachabilityWithHostname:@"www.qq.com"];
+        self.curReachability = [LSRReachability reachabilityWithHostname:@"www.qq.com"];
     
     if (_curReachability)
     {
@@ -105,7 +105,7 @@ static AppNetworkMonitoring* s_instance = nil;
 {
     static BOOL isFirstChanged = YES;
     
-    Reachability *reachab = (Reachability*)[notify object];
+    LSRReachability *reachab = (LSRReachability*)[notify object];
     NetworkStatus netStatus = [reachab currentReachabilityStatus];
     
     if (isFirstChanged)
@@ -196,7 +196,7 @@ static AppNetworkMonitoring* s_instance = nil;
 {
     self = [super init];
     {
-        Reachability *reachability =  [Reachability reachabilityForInternetConnection];
+        LSRReachability *reachability =  [LSRReachability reachabilityForInternetConnection];
         _networkStatus = [reachability currentReachabilityStatus];
     }
     
