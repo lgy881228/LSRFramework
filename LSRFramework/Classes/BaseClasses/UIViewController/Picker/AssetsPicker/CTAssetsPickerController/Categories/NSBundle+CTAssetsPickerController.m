@@ -50,7 +50,7 @@
 
 + (NSString *)ctassetsPickerLocalizedStringWithKey:(NSString *)key comment:(NSString *)comment
 {
-    NSBundle *libBundle = [TTTFrameworkResourcesLoader frameworkBundle];
+    NSBundle *libBundle = [TTTFrameworkResourcesLoader frameworkBundleWithBundleName:@"TTTFramework"];
     
     NSString *currentLanguage = self.currentLanguage;
     if (!currentLanguage)

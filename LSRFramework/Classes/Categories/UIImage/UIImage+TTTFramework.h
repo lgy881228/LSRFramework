@@ -10,6 +10,6 @@
 
 @interface UIImage (TTT)
 
-+ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName;
++ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName bundleName:(NSString *)bunleName;
 
 @end

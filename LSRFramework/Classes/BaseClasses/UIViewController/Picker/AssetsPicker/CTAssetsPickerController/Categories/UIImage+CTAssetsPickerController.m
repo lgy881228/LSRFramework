@@ -36,7 +36,7 @@
 #ifndef AssetsPickerForFramework
 + (UIImage *)ctassetsPickerImageNamed:(NSString *)name
 {
-    return [UIImage imageNamed:name inAssets:@"CTAssetsPicker"];
+    return [UIImage imageNamed:name inAssets:@"CTAssetsPicker" bundleName:@"TTTFramework"];
 }
 
 #else

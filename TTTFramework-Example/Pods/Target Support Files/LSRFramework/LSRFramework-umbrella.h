@@ -29,7 +29,7 @@
 #import "UIViewController+Loading_Prompt.h"
 #import "AppNetworkMonitoring.h"
 #import "Reachability+Extension.h"
-#import "Reachability.h"
+#import "LSRReachability.h"
 #import "UIViewController+NetworkStatus.h"
 #import "CTAssetsPickerController+Internal.h"
 #import "NSBundle+CTAssetsPickerController.h"

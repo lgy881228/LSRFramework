@@ -1,5 +1,5 @@
 PODS:
-  - LSRFramework (1.1.1):
+  - LSRFramework (1.1.3):
     - Masonry
     - MBProgressHUD
   - Masonry (1.1.0)
@@ -18,7 +18,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LSRFramework: 05785aa81ae5c6d618b31e84729057e32c8c45e4
+  LSRFramework: eb208c42f7d86680f0bca5a493c91d84d1e9652d
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
 

@@ -9,8 +9,8 @@
 
 @interface TTTFrameworkResourcesLoader : NSObject
 
-+ (NSBundle *)frameworkBundle;
++ (NSBundle *)frameworkBundleWithBundleName:(NSString *)bundleName;
 
-+ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName;
++ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName bundleName:(NSString *)bundleName;
 
 @end

@@ -1,6 +1,6 @@
 {
   "name": "LSRFramework",
-  "version": "1.1.1",
+  "version": "1.1.3",
   "summary": "UI Framework for LSRTeam.",
   "description": "LSRFramework is a simple framework for building ui interfaces, after you have configured the appropriate interface properties (especially the navigation bar), you don't have to worry about whether other interface modifications will have a negative impact on the interface. In fact, the interface will restore itself to its original appearance.",
   "homepage": "https://github.com/lgy881228/LSRFramework",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/lgy881228/LSRFramework.git",
-    "tag": "1.1.1"
+    "tag": "1.1.3"
   },
   "platforms": {
     "ios": "11.0"

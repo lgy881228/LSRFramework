@@ -7,22 +7,22 @@
 
 #import "TTTFrameworkResourcesLoader.h"
 
-NSString *const TTTFrameworkResourcesBundleName = @"TTTFramework";
+//NSString *const TTTFrameworkResourcesBundleName = @"TTTFramework";
 
 @implementation TTTFrameworkResourcesLoader
 
-+ (NSBundle *)frameworkBundle
++ (NSBundle *)frameworkBundleWithBundleName:(NSString *)bundleName
 {
-    NSString *bundleName = TTTFrameworkResourcesBundleName;
+    
     
     NSBundle *podBundle = [NSBundle bundleForClass:[self class]];
     NSString *bundlePath = [podBundle pathForResource:bundleName ofType:@"bundle"];
     return [NSBundle bundleWithPath:bundlePath];
 }
 
-+ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName
++ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName bundleName:(NSString *)bundleName
 {
-    NSBundle *bundle = [self frameworkBundle];
+    NSBundle *bundle = [self frameworkBundleWithBundleName:bundleName];
     
     if (bundle) {
         // NSLog(@"Testing Framework 里bundle path: %@", [libBundle resourcePath]);

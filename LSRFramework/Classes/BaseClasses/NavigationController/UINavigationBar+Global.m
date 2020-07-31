@@ -97,7 +97,7 @@
 + (UIImage *)backButtonImage
 {
     UIImage *backButtonImage = objc_getAssociatedObject(self.global, @selector(backButtonImage));
-    return backButtonImage ?: [UIImage imageNamed:@"navigation_back_image_default" inAssets:@"UIViewController"];
+    return backButtonImage ?: [UIImage imageNamed:@"navigation_back_image_default" inAssets:@"UIViewController" bundleName:@"TTTFramework"];
 }
 
 + (void)setCloseButtonImage:(UIImage *)closeButtonImage
@@ -108,7 +108,7 @@
 + (UIImage *)closeButtonImage
 {
     UIImage *closeButtonImage = objc_getAssociatedObject(self.global, @selector(closeButtonImage));
-    return closeButtonImage ?: [UIImage imageNamed:@"navigation_close_image_default" inAssets:@"UIViewController"];
+    return closeButtonImage ?: [UIImage imageNamed:@"navigation_close_image_default" inAssets:@"UIViewController" bundleName:@"TTTFramework"];
 }
 
 @end

@@ -11,9 +11,9 @@
 
 @implementation UIImage (TTT)
 
-+ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName
++ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName bundleName:(NSString *)bunleName
 {
-    return [TTTFrameworkResourcesLoader imageNamed:imageName inAssets:assetsName];
+    return [TTTFrameworkResourcesLoader imageNamed:imageName inAssets:assetsName bundleName:bunleName];
 }
 
 @end
