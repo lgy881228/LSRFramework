@@ -66,3 +66,5 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+TTTFramework-Example/.DS_Store
+.DS_Store
