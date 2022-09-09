@@ -12,10 +12,8 @@
 
 - (id)CheckError
 {
-    if ([self isKindOfClass:[NSNull class]] || !self)
-        return [[NSArray alloc] init];
-    else
-        return self;
+    if ([self isKindOfClass:[NSNull class]] || !self) return [[NSArray alloc] init];
+    else return self;
 }
 
 - (NSString *)stringObject
@@ -31,7 +29,7 @@
 + (NSString *)documentDirectory
 {
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    
+
     return [paths objectAtIndex:0];
 }
 
@@ -43,8 +41,7 @@
 + (BOOL)archive:(id)object toDirectory:(NSString *)directory
 {
     BOOL success = [NSKeyedArchiver archiveRootObject:object toFile:directory];
-    if (!success)
-    {
+    if (!success) {
         NSLog(@">>>archive failed!!!");
     }
     return success;
@@ -58,7 +55,7 @@
 + (id)unarchiveFromDirectory:(NSString *)directory
 {
     id obj = [NSKeyedUnarchiver unarchiveObjectWithFile:directory];
-    
+
     return obj;
 }
 

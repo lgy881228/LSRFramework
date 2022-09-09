@@ -1,0 +1,18 @@
+
+"设备不支持短信功能" = "The device does not support the SMS.";
+"确定" = "OK";
+"我分享了文件给您，地址是：%@" = "I shared the file with you at: %@";
+
+"提示" = "Prompt";
+"您不能发送邮件 请前往“设置 > 邮件”添加邮箱帐户" = "You cannot send mail Please go to \"Settings > Mail\" to add an email account";
+
+"取消发送" = "Canceled";
+"已保存邮件" = "Saved";
+"发送成功" = "Send succeed";
+"发送失败" = "Send failed";
+"发生异常错误，请稍后重试" = "An unexpected error occurred.";
+"已保存到相册" = "Saved to CameraRoll";
+"已拷贝到粘贴板" = "Copied to Clipboard";
+"已指定给联系人" = "Assigned to the Contact";
+"AirDrop 分享成功" = "AirDrop Sharing successful";
+"分享成功" = "Share succeed";

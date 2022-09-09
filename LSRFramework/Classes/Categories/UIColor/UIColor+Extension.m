@@ -14,16 +14,16 @@
 {
     CGFloat red, green, blue, alpha;
     [self getRed:&red green:&green blue:&blue alpha:&alpha];
-    
-    return [UIColor colorWithRed:red green:green blue:blue alpha:0.25f];
+
+    return [UIColor colorWithRed:red green:green blue:blue alpha:0.5f];
 }
 
 - (UIColor *)disabledColor
 {
     CGFloat red, green, blue, alpha;
     [self getRed:&red green:&green blue:&blue alpha:&alpha];
-    
-    return [UIColor colorWithRed:red green:green blue:blue alpha:0.25f];
+
+    return [UIColor colorWithRed:red green:green blue:blue alpha:0.5f];
 }
 
 + (BOOL)isColor:(UIColor *)aColor sameToColor:(UIColor *)bColor
@@ -37,7 +37,7 @@
     CGFloat bRed, bGreen, bBlue, bAlpha;
     [self getRed:&aRed green:&aGreen blue:&aBlue alpha:&aAlpha];
     [bColor getRed:&bRed green:&bGreen blue:&bBlue alpha:&bAlpha];
-    
+
     return (aRed == bRed) && (aGreen == bGreen) && (aBlue == bBlue) && (aAlpha == bAlpha);
 }
 
@@ -45,21 +45,16 @@
 {
     CGFloat red, green, blue, alpha;
     [self getRed:&red green:&green blue:&blue alpha:&alpha];
-    
+
     if (red > SHADOW_IMAGE_GRAY_VALUE &&
         green > SHADOW_IMAGE_GRAY_VALUE &&
-        blue > SHADOW_IMAGE_GRAY_VALUE)
-    {
+        blue > SHADOW_IMAGE_GRAY_VALUE) {
         // light
         return YES;
-    }
-    else if (0 == red && 0 == green && 0 == blue && 0 == alpha)
-    {
+    } else if (0 == red && 0 == green && 0 == blue && 0 == alpha) {
         // clear
         return YES;
-    }
-    else
-    {
+    } else {
         // dark
         return NO;
     }
@@ -69,14 +64,11 @@
 {
     CGFloat red, green, blue, alpha;
     [self getRed:&red green:&green blue:&blue alpha:&alpha];
-    
-    if (0 == red && 0 == green && 0 == blue && 0 == alpha)
-    {
+
+    if (0 == red && 0 == green && 0 == blue && 0 == alpha) {
         // clear
         return YES;
-    }
-    else
-    {
+    } else {
         // dark
         return NO;
     }

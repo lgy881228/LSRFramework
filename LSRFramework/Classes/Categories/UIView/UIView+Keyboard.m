@@ -62,7 +62,7 @@
 
 - (void)setX:(CGFloat)x
 {
-    self.frame = (CGRect){
+    self.frame = (CGRect) {
         .origin = {.x = x, .y = self.y},
         .size   = {.width = self.width, .height = self.height}
     };
@@ -70,7 +70,7 @@
 
 - (void)setY:(CGFloat)y
 {
-    self.frame = (CGRect){
+    self.frame = (CGRect) {
         .origin = {.x = self.x, .y = y},
         .size   = {.width = self.width, .height = self.height}
     };
@@ -78,7 +78,7 @@
 
 - (void)setWidth:(CGFloat)width
 {
-    self.frame = (CGRect){
+    self.frame = (CGRect) {
         .origin = {.x = self.x, .y = self.y},
         .size   = {.width = width, .height = self.height}
     };
@@ -86,7 +86,7 @@
 
 - (void)setHeight:(CGFloat)height
 {
-    self.frame = (CGRect){
+    self.frame = (CGRect) {
         .origin = {.x = self.x, .y = self.y},
         .size   = {.width = self.width, .height = height}
     };
@@ -94,7 +94,7 @@
 
 - (void)setOrigin:(CGPoint)origin
 {
-    self.frame = (CGRect){
+    self.frame = (CGRect) {
         .origin = {.x = origin.x, .y = origin.y},
         .size   = {.width = self.width, .height = self.height}
     };
@@ -102,7 +102,7 @@
 
 - (void)setSize:(CGSize)size
 {
-    self.frame = (CGRect){
+    self.frame = (CGRect) {
         .origin = {.x = self.x, .y = self.y},
         .size   = {.width = size.width, .height = size.height}
     };

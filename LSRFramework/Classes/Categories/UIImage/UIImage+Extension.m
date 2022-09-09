@@ -247,7 +247,7 @@ void DataProviderReleaseDataCallback(void *info, const void *data, size_t size)
         // center the image
         if (widthFactor > heightFactor) {
             if (!isCenter) {
-                // 和王建伟在风行时的需求 剧照墙好多是竖图照片 往上裁剪 来看到人头
+                // 和王建伟在风行时的需求 剧照墙好多是竖图 往上裁剪 来看到人头
                 // thumbnailPoint.y = (targetSize.height - scaledSize.height) * 0.5 * 0.5;
 
                 // 缩略图来看到图片最上边 大图预览所看到的图的最上部分
@@ -261,11 +261,11 @@ void DataProviderReleaseDataCallback(void *info, const void *data, size_t size)
             }
         }
 
-        float our = self.size.height / self.size.width;
-        float screen = [[UIScreen mainScreen] bounds].size.height / [[UIScreen mainScreen] bounds].size.width;
-        if (our > screen) {
-            isLongImage = YES;
-        }
+//        float our = self.size.height / self.size.width;
+//        float screen = [[UIScreen mainScreen] bounds].size.height / [[UIScreen mainScreen] bounds].size.width;
+//        if (our > screen) {
+//            isLongImage = YES;
+//        }
     }
 
     // this will crop

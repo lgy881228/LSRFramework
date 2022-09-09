@@ -7,13 +7,13 @@
 //
 
 #import "UIImage+TTTFramework.h"
-#import "TTTFrameworkResourcesLoader.h"
+#import "TTTFrameworkResources.h"
 
 @implementation UIImage (TTT)
 
-+ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName bundleName:(NSString *)bunleName
++ (UIImage *)imageNamed:(NSString *)imageName inAssets:(NSString *)assetsName
 {
-    return [TTTFrameworkResourcesLoader imageNamed:imageName inAssets:assetsName bundleName:bunleName];
+    return [TTTFrameworkResources imageNamed:imageName inAssets:assetsName];
 }
 
 @end

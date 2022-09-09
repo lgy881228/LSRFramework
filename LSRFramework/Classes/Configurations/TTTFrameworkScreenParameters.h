@@ -26,15 +26,17 @@
 #define TAB_BAR_HEIGHT                 49.0
 
 // 安全区
-#define SAFE_AREA_INSETS               [[[[UIApplication sharedApplication] delegate] window] safeAreaInsets]
-#define SAFE_AREA_LEFT_SPACING         (@available(iOS 11.0, *) ? SAFE_AREA_INSETS.left   : 0.0)
-#define SAFE_AREA_RIGHT_SPACING        (@available(iOS 11.0, *) ? SAFE_AREA_INSETS.right  : 0.0)
-#define SAFE_AREA_TOP_SPACING          (@available(iOS 11.0, *) ? SAFE_AREA_INSETS.top    : 0.0)
-#define SAFE_AREA_BOTTOM_SPACING       (@available(iOS 11.0, *) ? SAFE_AREA_INSETS.bottom : 0.0)
+#define SAFE_AREA_INSETS               (@available(iOS 11.0, *) ?\
+                                       UIApplication.sharedApplication.keyWindow.safeAreaInsets : UIEdgeInsetsZero)
+
+#define SAFE_AREA_LEFT_SPACING         SAFE_AREA_INSETS.left
+#define SAFE_AREA_RIGHT_SPACING        SAFE_AREA_INSETS.right
+#define SAFE_AREA_TOP_SPACING          SAFE_AREA_INSETS.top
+#define SAFE_AREA_BOTTOM_SPACING       SAFE_AREA_INSETS.bottom
 #define SAFE_AREA_SIDE_SPACING         fmax(SAFE_AREA_LEFT_SPACING, SAFE_AREA_RIGHT_SPACING)
 
 // 切换栏区域
-#define TAB_BAR_AREA_HEIGHT            (TAB_BAR_HEIGHT + SAFE_AREA_BOTTOM_SPACING)
+#define TAB_BAR_AREA_HEIGHT            (TAB_BAR_HEIGHT + SAFE_AREA_INSETS.bottom)
 
 // 是否是全面屏（如iphoneX）
 #define IS_ALL_SCREEN_DEVICE           (@available(iOS 11.0, *) ? SAFE_AREA_INSETS.bottom > 0.0 : NO)
