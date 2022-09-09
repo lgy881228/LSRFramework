@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,6 @@
 		E7DF2565224218E200A86C92 /* CommonTableViewHeaderFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DF2553224218E200A86C92 /* CommonTableViewHeaderFooter.m */; };
 		E7DF2566224218E200A86C92 /* CommonTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DF2554224218E200A86C92 /* CommonTableViewCell.m */; };
 		E7DF2567224218E200A86C92 /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DF2558224218E200A86C92 /* SettingsViewController.m */; };
-		E7DF2568224218E200A86C92 /* BlurEffectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DF2559224218E200A86C92 /* BlurEffectViewController.m */; };
 		E7DF2569224218E200A86C92 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = E7DF255B224218E200A86C92 /* ViewController.mm */; };
 		E7DF256A224218E200A86C92 /* SomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DF255E224218E200A86C92 /* SomeViewController.m */; };
 		E7DF256B224218E200A86C92 /* PushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DF255F224218E200A86C92 /* PushedViewController.m */; };
@@ -60,10 +59,8 @@
 		E7DF2553224218E200A86C92 /* CommonTableViewHeaderFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewHeaderFooter.m; sourceTree = "<group>"; };
 		E7DF2554224218E200A86C92 /* CommonTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonTableViewCell.m; sourceTree = "<group>"; };
 		E7DF2555224218E200A86C92 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
-		E7DF2556224218E200A86C92 /* BlurEffectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlurEffectViewController.h; sourceTree = "<group>"; };
 		E7DF2557224218E200A86C92 /* TabBarController+Theme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TabBarController+Theme.h"; sourceTree = "<group>"; };
 		E7DF2558224218E200A86C92 /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
-		E7DF2559224218E200A86C92 /* BlurEffectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlurEffectViewController.m; sourceTree = "<group>"; };
 		E7DF255B224218E200A86C92 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		E7DF255C224218E200A86C92 /* SomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SomeViewController.h; sourceTree = "<group>"; };
 		E7DF255D224218E200A86C92 /* PushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushedViewController.h; sourceTree = "<group>"; };
@@ -159,8 +156,6 @@
 			children = (
 				E7DF2555224218E200A86C92 /* SettingsViewController.h */,
 				E7DF2558224218E200A86C92 /* SettingsViewController.m */,
-				E7DF2556224218E200A86C92 /* BlurEffectViewController.h */,
-				E7DF2559224218E200A86C92 /* BlurEffectViewController.m */,
 				E7DF2557224218E200A86C92 /* TabBarController+Theme.h */,
 				E7DF254F224218E200A86C92 /* TabBarController+Theme.m */,
 				E7DF2550224218E200A86C92 /* CommonTableViewCell */,
@@ -324,7 +319,6 @@
 				E7DF2562224218E200A86C92 /* UIButton+ContentView.m in Sources */,
 				E7D5EEBB2240DFCA00DA8882 /* main.m in Sources */,
 				E7DF2567224218E200A86C92 /* SettingsViewController.m in Sources */,
-				E7DF2568224218E200A86C92 /* BlurEffectViewController.m in Sources */,
 				E7DF256A224218E200A86C92 /* SomeViewController.m in Sources */,
 				E7DF2561224218E200A86C92 /* UIView+Debug.m in Sources */,
 				E7DF2566224218E200A86C92 /* CommonTableViewCell.m in Sources */,

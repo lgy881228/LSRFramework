@@ -1,9 +1,11 @@
 PODS:
-  - LSRFramework (1.1.3):
+  - LSRFramework (1.1.4):
     - Masonry
     - MBProgressHUD
+    - uchardet
   - Masonry (1.1.0)
   - MBProgressHUD (1.2.0)
+  - uchardet (0.0.1)
 
 DEPENDENCIES:
   - LSRFramework (from `../`)
@@ -12,16 +14,18 @@ SPEC REPOS:
   trunk:
     - Masonry
     - MBProgressHUD
+    - uchardet
 
 EXTERNAL SOURCES:
   LSRFramework:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LSRFramework: eb208c42f7d86680f0bca5a493c91d84d1e9652d
+  LSRFramework: 14d10c0b2735f73793f121162570c0726c683f4f
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  uchardet: 2b9643afef38946d1d20c124c9e2be6c028b543d
 
 PODFILE CHECKSUM: 0cd988ba322a0ed54bd7eb2e6f1e2c3cedee509a
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.3

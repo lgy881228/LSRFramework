@@ -4,7 +4,7 @@ Pod::Spec.new do |s|
 
   
     s.name         = "LSRFramework"
-    s.version      = "1.1.4"
+    s.version      = "1.1.5"
     s.summary      = "UI Framework for LSRTeam."
 
 	s.description  = <<-DESC
@@ -36,7 +36,7 @@ Pod::Spec.new do |s|
 
     s.dependency 'MBProgressHUD'
     s.dependency 'Masonry'
-   
+    s.dependency 'uchardet'
 
 
 end

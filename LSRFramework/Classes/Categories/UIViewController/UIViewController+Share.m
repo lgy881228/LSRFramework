@@ -7,11 +7,11 @@
 //
 
 #import "UIViewController+Share.h"
-#import <TTTFramework/UIViewController+.h>
-#import <TTTFramework/NSString+Extension.h>
-#import <TTTFramework/NSObject+Helper.h>
-#import <TTTFramework/UINavigationItem+BarButtonItem.h>
-#import <TTTFramework/NSBundle+TTTFramework.h>
+#import <LSRFramework/UIViewController+.h>
+#import <LSRFramework/NSString+Extension.h>
+#import <LSRFramework/NSObject+Helper.h>
+#import <LSRFramework/UINavigationItem+BarButtonItem.h>
+#import <LSRFramework/NSBundle+TTTFramework.h>
 
 #define kEmailAttachmentNameKey       @"EmailAttachmentName"
 #define kEmailAttachmentMimeTypeKey   @"EmailAttachmentMimeType"
