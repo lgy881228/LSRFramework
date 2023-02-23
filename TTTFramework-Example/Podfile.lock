@@ -1,5 +1,5 @@
 PODS:
-  - LSRFramework (1.1.4):
+  - LSRFramework (1.1.5):
     - Masonry
     - MBProgressHUD
     - uchardet
@@ -21,7 +21,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  LSRFramework: 14d10c0b2735f73793f121162570c0726c683f4f
+  LSRFramework: c1cdb8b6f6307143b080ed1807add2e3cb1d38e9
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
   uchardet: 2b9643afef38946d1d20c124c9e2be6c028b543d

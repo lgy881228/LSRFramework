@@ -110,11 +110,19 @@
         UINavigationController *nc = nil;
         if (self.navigationControllerConstructor) {
             self.navigationControllerConstructor(&nc, vc);
+            [viewControllers addObject:nc];
         } else {
-            nc = [[UINavigationController alloc] initWithRootViewController:vc];
+            if (!self.noNeedCreateNav) {
+                nc = [[UINavigationController alloc] initWithRootViewController:vc];
+                [viewControllers addObject:nc];
+            } else {
+                [viewControllers addObject:vc];
+
+            }
+
         }
 
-        [viewControllers addObject:nc];
+        
     }
 
     self.viewControllers = viewControllers;

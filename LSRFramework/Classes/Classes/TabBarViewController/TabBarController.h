@@ -31,6 +31,9 @@ typedef void (^NavigationControllerConstructor)(UINavigationController **nc, UIV
 
 @property (nonatomic, copy) NavigationControllerConstructor navigationControllerConstructor;
 
+/** 是否需要创建NavigationVC */
+@property (nonatomic, assign) BOOL noNeedCreateNav;
+
 #pragma mark - Member Methods
 // 构建TabBarController，属性都设置完毕之后调用
 - (void)loadChildViewControllers;
